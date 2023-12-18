@@ -1,0 +1,17 @@
+.footer {
+    background-color: var(--secondary-color);
+    height: 3rem;
+    width: 100%;
+    color: wheat;
+
+    position: absolute;
+    bottom: 0;
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        grid-column: 2/3;
+    };
+};

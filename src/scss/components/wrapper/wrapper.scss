@@ -1,0 +1,10 @@
+.wrapper {
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: minmax(var(--wrapper-padding-inline), 1fr) 
+    minmax(0, var(--wrapper-max-width)) 
+    minmax(var(--wrapper-padding-inline), 1fr);
+
+  grid-template-rows: 100%;
+};
