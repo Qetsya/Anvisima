@@ -1,9 +1,10 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  position: relative;
   width: 36px;
   height: 30px;
-  top: 10rem;
+  top: 1rem;
+  left: 1rem;
 }
 
 /* Color/shape of burger icon bars */
@@ -33,19 +34,19 @@
   */
 .bm-menu-wrap {
   position: fixed;
-  height: 70% !important;
+  top: 0;
+  height: 100%;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
-  border-radius: 10px;
+  background: var(--secondary-color);
+  border-radius: 0 10px 10px 0;
   font-size: 2rem;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
   padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column;
@@ -60,6 +61,7 @@
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(255, 255, 255, 0.3);
+  top: 0;
 }
 
 @media (min-width: $layout-breakpoint-tablet) {

@@ -1,6 +1,6 @@
 .header {
   background-color: var(--main-color);
-  height: 9rem;
+  height: var(--header-height);
   font-size: 2rem;
 
   &-top {
@@ -9,7 +9,7 @@
 
   &-body {
     height: 100%;
-    background-image: url("../../../assets/images/background/yel-background.png");
+    background-image: url("../../../assets/images/background/yel-background.avif");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -39,7 +39,7 @@
     height: 12.5rem;
     &-top {
       display: block;
-      background-image: url("../../../assets/images/background/black-background.png");
+      background-image: url("../../../assets/images/background/black-background.avif");
       background-repeat: no-repeat;
       background-size: cover;
 

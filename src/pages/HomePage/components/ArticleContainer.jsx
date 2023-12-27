@@ -1,5 +1,5 @@
-import smallArticleImage from "../../../assets/images/hero/audi-r8-Small.jpg";
-import mediumArticleImage from "../../../assets/images/hero/audi-r8-Medium.jpg";
+import smallArticleImage from "../../../assets/images/hero/audi-r8-Small.avif";
+import mediumArticleImage from "../../../assets/images/hero/audi-r8-Medium.avif";
 
 const Article = () => {
   return (

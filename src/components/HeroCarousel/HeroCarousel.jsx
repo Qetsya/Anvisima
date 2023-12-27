@@ -1,21 +1,21 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import smallCar1 from "../../assets/images/hero/yellow-mercedez-Small.jpg";
-import mediumCar1 from "../../assets/images/hero/yellow-mercedez-Medium.jpg";
-import largeCar1 from "../../assets/images/hero/yellow-mercedez-Large.jpg";
+import smallCar1 from "../../assets/images/hero/yellow-mercedez-Small.avif";
+import mediumCar1 from "../../assets/images/hero/yellow-mercedez-Medium.avif";
+import largeCar1 from "../../assets/images/hero/yellow-mercedez-Large.avif";
 
-import smallCar2 from "../../assets/images/hero/audi-r8-Small.jpg";
-import mediumCar2 from "../../assets/images/hero/audi-r8-Medium.jpg";
-import largeCar2 from "../../assets/images/hero/audi-r8-Large.jpg";
+import smallCar2 from "../../assets/images/hero/audi-r8-Small.avif";
+import mediumCar2 from "../../assets/images/hero/audi-r8-Medium.avif";
+import largeCar2 from "../../assets/images/hero/audi-r8-Large.avif";
 
-import smallCar3 from "../../assets/images/hero/nissan-Small.jpg";
-import mediumCar3 from "../../assets/images/hero/nissan-Medium.jpg";
-import largeCar3 from "../../assets/images/hero/nissan-Large.jpg";
+import smallCar3 from "../../assets/images/hero/nissan-Small.avif";
+import mediumCar3 from "../../assets/images/hero/nissan-Medium.avif";
+import largeCar3 from "../../assets/images/hero/nissan-Large.avif";
 
-import smallCar4 from "../../assets/images/hero/bmw-Small.jpg";
-import mediumCar4 from "../../assets/images/hero/bmw-Medium.jpg";
-import largeCar4 from "../../assets/images/hero/bmw-Large.jpg";
+import smallCar4 from "../../assets/images/hero/bmw-Small.avif";
+import mediumCar4 from "../../assets/images/hero/bmw-Medium.avif";
+import largeCar4 from "../../assets/images/hero/bmw-Large.avif";
 
 const HeroCarousel = () => {
   return (

@@ -35,13 +35,13 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <MobileMenu
+        isOpen={isOpen}
+        onStateChange={(state) => stateChangeHandler(state)}
+      >
+        {navbarPages}
+      </MobileMenu>
       <div className="wrapper">
-        <MobileMenu
-          isOpen={isOpen}
-          onStateChange={(state) => stateChangeHandler(state)}
-        >
-          {navbarPages}
-        </MobileMenu>
         <ul className="navbar-content">{navbarPages}</ul>
       </div>
     </nav>
