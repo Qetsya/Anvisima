@@ -1,26 +1,50 @@
 import { NavLink } from "react-router-dom";
+import { slide as MobileMenu } from "react-burger-menu";
 
 import navbarLinks from "./navbarLinks";
+import { useMemo, useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const stateChangeHandler = (state) => {
+    setIsOpen(state.isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  const navbarPages = useMemo(
+    () =>
+      navbarLinks.map((navlink) => {
+        return (
+          <li key={navlink.label}>
+            <NavLink
+              className={"navbar-link"}
+              to={navlink.to}
+              onClick={closeMenu}
+            >
+              {navlink.label}
+            </NavLink>
+          </li>
+        );
+      }),
+    [navbarLinks]
+  );
+
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="wrapper">
-        <div className="navbar-content">
-          {navbarLinks.map((navlink) => {
-            return (
-              <NavLink
-                className={"navbar-link"}
-                key={navlink.label}
-                to={navlink.to}
-              >
-                {navlink.label}
-              </NavLink>
-            );
-          })}
-        </div>
+        <MobileMenu
+          isOpen={isOpen}
+          onStateChange={(state) => stateChangeHandler(state)}
+        >
+          {navbarPages}
+        </MobileMenu>
+        <ul className="navbar-content">{navbarPages}</ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

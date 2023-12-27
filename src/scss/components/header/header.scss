@@ -1,49 +1,74 @@
 .header {
   background-color: var(--main-color);
-  height: 12.5rem;
+  height: 9rem;
   font-size: 2rem;
 
   &-top {
-    background-image: url("../../../assets/images/black-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    height: 40%;
-    text-align: right;
-    color: wheat;
-
-    &-title {
-      grid-column: 2/3;
-      align-self: center;
-    };
-  };
+    display: none;
+  }
 
   &-body {
-    height: 60%;
-    background-image: url("../../../assets/images/yel-background.png");
+    height: 100%;
+    background-image: url("../../../assets/images/background/yel-background.png");
     background-repeat: no-repeat;
     background-size: cover;
 
     &-content {
-      display: flex;
-      grid-column: 2/3;
-    };
-
+      height: 100%;
+    }
+    
     &__container {
-      flex: 1;
-    };
+      height: 100%;
+      text-align: center;
+    }
 
     &-logo {
       object-fit: contain;
-      width: 100%;
       height: 100%;
       cursor: pointer;
-    };
-    
+    }
+
     &-contacts {
-      flex: 1;
-      align-self: center;
-      text-align: center;
-    };
-  };
-};
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $layout-breakpoint-desktop) {
+  .header {
+    height: 12.5rem;
+    &-top {
+      display: block;
+      background-image: url("../../../assets/images/background/black-background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      height: 40%;
+      text-align: right;
+      color: wheat;
+      &-title {
+        grid-column: 2/3;
+        align-self: center;
+      }
+    }
+    &-body {
+      height: 60%;
+
+      &-content {
+        display: flex;
+        grid-column: 2/3;
+      }
+
+      &__container {
+        flex: 1;
+      }
+      
+      &-contacts {
+        display: block;
+        flex: 1;
+        align-self: center;
+        text-align: center;
+      }
+    }
+  }
+}

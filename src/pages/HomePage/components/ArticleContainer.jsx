@@ -1,4 +1,5 @@
-import articleImage from "../../../assets/images/audi-r8.jpg";
+import smallArticleImage from "../../../assets/images/hero/audi-r8-Small.jpg";
+import mediumArticleImage from "../../../assets/images/hero/audi-r8-Medium.jpg";
 
 const Article = () => {
   return (
@@ -14,7 +15,16 @@ const Article = () => {
           </p>
         </article>
         <div className="section-container__image-box">
-          <img className="section-container__image" src={articleImage} alt="car-logo" />
+          <img
+            className="section-container__image"
+            srcSet={`
+            ${smallArticleImage} 425w,
+            ${mediumArticleImage} 768w,
+          `}
+            sizes="(max-width: 426px), 427px"
+            src={mediumArticleImage}
+            alt="car-logo"
+          />
         </div>
       </section>
     </div>

@@ -1,50 +1,64 @@
 .navbar {
-  background-image: url("../../../assets/images/black-background.png");
+  background-image: url("../../../assets/images/background/black-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  
+  height: 4rem;
+
   color: wheat;
   font-weight: 600;
   font-size: 1.7rem;
 
   &-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: var(--layout-padding);
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-
-    grid-column: 2/3;
-  };
-  
+    display: none;
+  }
   &-link {
-    position: relative;
+    cursor: pointer;
     text-decoration: none;
     color: inherit;
-    padding: 0.5rem 1rem;
-    border-radius: 14px;
-    cursor: pointer;
+  }
+}
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform: scale(0.9);
-      z-index: -1;
-    };
+@media (min-width: $layout-breakpoint-tablet) {
+  .navbar {
+    display: block;
 
-    &:hover::before {
-      transform: scale(1.1);
-    };
+    &-content {
+      list-style: none;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: var(--layout-padding);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
 
-    &:hover {
-      color: var(--main-color);
-      box-shadow: 0 0 5px var(--main-color);
-      text-shadow: 0 0 5px var(--main-color);
-    };
-  };
-};
+      grid-column: 2/3;
+    }
+    &-link {
+      position: relative;
+      padding: 0.5rem 1rem;
+      border-radius: 14px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(0.9);
+        z-index: -1;
+      }
+
+      &:hover::before {
+        transform: scale(1.1);
+      }
+
+      &:hover {
+        color: var(--main-color);
+        box-shadow: 0 0 5px var(--main-color);
+        text-shadow: 0 0 5px var(--main-color);
+      }
+    }
+  }
+}

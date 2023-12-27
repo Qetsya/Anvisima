@@ -1,10 +1,17 @@
 .wrapper {
   height: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+};
 
-  display: grid;
-  grid-template-columns: minmax(var(--wrapper-padding-inline), 1fr) 
-    minmax(0, var(--wrapper-max-width)) 
-    minmax(var(--wrapper-padding-inline), 1fr);
+@media (min-width: $layout-breakpoint-desktop) {
+  .wrapper {
+    display: grid;
+    grid-template-columns:
+      minmax(var(--wrapper-padding-inline), 1fr)
+      minmax(0, var(--wrapper-max-width))
+      minmax(var(--wrapper-padding-inline), 1fr);
 
-  grid-template-rows: 100%;
+    grid-template-rows: 100%;
+  };
 };
