@@ -15,7 +15,7 @@ const Header = () => {
         <div className="header-body">
           <div className="wrapper">
             <div className="header-body-content">
-              <div className="header-body__container">
+              <div className="header-body-container">
                 <NavLink to={routes.homePage}>
                   <img
                     className="header-body-logo"

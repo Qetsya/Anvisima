@@ -17,6 +17,8 @@ import smallCar4 from "../../assets/images/hero/bmw-Small.avif";
 import mediumCar4 from "../../assets/images/hero/bmw-Medium.avif";
 import largeCar4 from "../../assets/images/hero/bmw-Large.avif";
 
+const mediaSizes = "(max-width: 426px), (max-width: 769px), (min-width: 770px)";
+
 const HeroCarousel = () => {
   return (
     <Carousel
@@ -36,7 +38,7 @@ const HeroCarousel = () => {
           ${mediumCar1} 768w,
           ${largeCar1} 900w,
         `}
-          sizes="(max-width: 426px), (max-width: 769px), (min-width: 770px)"
+          sizes={mediaSizes}
           src={largeCar1}
           alt="yellowMercedezBenz on a road"
         />
@@ -49,7 +51,7 @@ const HeroCarousel = () => {
             ${mediumCar2} 768w,
             ${largeCar2} 900w,
           `}
-          sizes="(max-width: 426px), (max-width: 769px), (min-width: 770px)"
+          sizes={mediaSizes}
           src={largeCar2}
           alt="audiR8 in a traffic"
         />
@@ -62,7 +64,7 @@ const HeroCarousel = () => {
             ${mediumCar3} 768w,
             ${largeCar3} 900w,
           `}
-          sizes="(max-width: 426px), (max-width: 769px), (min-width: 770px)"
+          sizes={mediaSizes}
           src={largeCar3}
           alt="whiteNissan on a road"
         />
@@ -75,7 +77,7 @@ const HeroCarousel = () => {
             ${mediumCar4} 768w,
             ${largeCar4} 900w,
           `}
-          sizes="(max-width: 426px), (max-width: 769px), (min-width: 770px)"
+          sizes={mediaSizes}
           src={largeCar4}
           alt="greyBMW in parking lot"
         />

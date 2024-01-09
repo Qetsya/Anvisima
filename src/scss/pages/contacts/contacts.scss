@@ -1,0 +1,96 @@
+.contacts {
+  &-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: var(--header-height);
+    width: 100%;
+
+    background: linear-gradient(
+      144deg,
+      rgba(21, 21, 22, 1) 0%,
+      rgba(99, 99, 102, 1) 62%,
+      rgba(201, 201, 201, 1) 100%
+    );
+
+    &-text {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 3rem;
+      background: linear-gradient(
+        144deg,
+        rgba(6, 6, 6, 1) 0%,
+        rgba(250, 205, 81, 1) 60%,
+        rgba(247, 247, 247, 1) 100%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 100%;
+      background: linear-gradient(
+        144deg,
+        rgba(251, 190, 21, 0.089) 0%,
+        rgba(250, 205, 81, 1) 50%,
+        rgba(254, 234, 178, 0.301) 99%
+      );
+      bottom: 0;
+    }
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+    margin-top: 1rem;
+  }
+
+  &-map {
+    height: 16rem;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    height: 16rem;
+
+    & h3,
+    h4 {
+      margin: 0;
+    }
+
+    &-text {
+      font-weight: 300;
+    }
+  }
+}
+
+@media (min-width: $layout-breakpoint-tablet) {
+  .contacts {
+    &-container {
+      flex-direction: row;
+
+      grid-column: 2/3;
+      height: 16rem;
+    }
+
+    &-map {
+      flex: 1;
+    }
+
+    &-content {
+      flex: 1;
+    }
+  }
+}
