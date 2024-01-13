@@ -1,4 +1,4 @@
-import { contacts } from "../../assets/data/contacts";
+import { contacts } from "../../common/data/contacts";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 const libraries = ["places"];

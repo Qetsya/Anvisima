@@ -53,7 +53,7 @@
   }
 
   &-map {
-    height: 16rem;
+    height: 20rem;
   }
 
   &-content {
@@ -63,7 +63,7 @@
     align-items: center;
     gap: 0.5rem;
 
-    height: 16rem;
+    height: 20rem;
 
     & h3,
     h4 {
@@ -82,7 +82,7 @@
       flex-direction: row;
 
       grid-column: 2/3;
-      height: 16rem;
+      height: 20rem;
     }
 
     &-map {

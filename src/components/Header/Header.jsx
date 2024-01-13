@@ -1,6 +1,6 @@
 import Navbar from "../Navbar/Navbar";
 import { NavLink } from "react-router-dom";
-import routes from "../constants/routes";
+import routes from "../../common/constants/routes";
 import anvisimaLogo from "../../assets/images/small-logo.png";
 
 const Header = () => {

@@ -1,4 +1,4 @@
-import routes from "../constants/routes";
+import routes from "../../common/constants/routes";
 
 const navbarLinks = [
     {
@@ -10,11 +10,11 @@ const navbarLinks = [
         label: "Naujienos",
     },
     {
-        to: routes.homePage,
+        to: routes.companyServices,
         label: "Paslaugos",
     },
     {
-        to: routes.homePage,
+        to: routes.companyServices,
         label: "Tepalai",
     },
     {

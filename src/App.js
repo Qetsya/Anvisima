@@ -6,8 +6,9 @@ import HomePage from "./pages/HomePage/HomePage.jsx";
 import NewsPage from "./pages/NewsPage/NewsPage.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Contacts from "./pages/Contacts/Contacts.jsx";
+import CompanyServices from "./pages/CompanyServices/CompanyServices.jsx";
 
-import routes from "./components/constants/routes.jsx";
+import routes from "./common/constants/routes.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path={routes.homePage} element={<HomePage/>}/>
         <Route path={routes.newsPage} element={<NewsPage/>}/>
+        <Route path={routes.companyServices} element={<CompanyServices/>}/>
         <Route path={routes.contacts} element={<Contacts/>}/>
       </Routes>
     <Footer/>
